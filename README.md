@@ -14,3 +14,6 @@ pod repo remove <REPO_NAME>
 
 更新某个repo
 pod repo update <REPO_NAME>
+
+更新本地Spec到github仓库中
+pod repo push MTKitSpec MTKit.podspec
