@@ -12,7 +12,7 @@ s.homepage     = "https://github.com/MTKit/MTKit/tree/master/MTlib"
 s.license      = "MIT"
 
 s.author             = { "HaoSun" => "sunhao.private@foxmail.com" }
-s.source       = { :git => "https://github.com/MTKit/MTKit/tree/master/MTlib.git", :tag => "v1.0.0" }
+s.source       = { :git => "https://github.com/MTKit/MTKit/tree/master/MTlib.git", :tag => "1.0.0" }
 s.source_files  = 'lib/*.{h,m}'
 s.requires_arc = true
 end
