@@ -53,6 +53,7 @@
 		6D57EF931F78B40A00CC4301 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6D57EF941F78B40A00CC4301 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6D57EF951F78B40A00CC4301 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D57EF991F78B5A400CC4301 /* MTKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +148,7 @@
 		6D57EF961F78B40A00CC4301 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				6D57EF991F78B5A400CC4301 /* MTKit.h */,
 			);
 			path = lib;
 			sourceTree = "<group>";
