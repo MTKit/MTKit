@@ -9,7 +9,7 @@
 #import "Toast.h"
 #import "AppDelegate.h"
 #import "MTSingleton.h"
-
+#import "MTMacro.h"
 //定义一个静态变量用于接收实例对象，初始化为nil
 static Toast *singleInstance=nil;
 

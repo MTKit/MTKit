@@ -18,7 +18,7 @@
 {
     UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
     label.textColor = HEXCOLOR(0x737373);
-    label.font = SYSFONT14;
+    label.font = MTFONT14;
     label.text = @"没有查到你所需要的数据!";
     label.textAlignment = NSTextAlignmentCenter;
     label.hidden = true;
