@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Avatar)
+@interface NSString (URLExtension)
 
-- (NSURL *)mt_URLForAvatar;
-
-- (NSURL *)mt_URLForHouse;
+- (NSURL *)mt_URLForPrefix:(NSString *)urlPrefix;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "UITextView+MTProperty.h"
+#import "MTMacro.h"
+#import <objc/runtime.h>
 
 @implementation UITextView (MTProperty)
 static const char * const MT_TEXTVIEW_SELECTED_RANGE_KEY = "MT_TEXTVIEW_SELECTED_RANGE_KEY";

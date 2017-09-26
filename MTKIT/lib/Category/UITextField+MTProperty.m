@@ -7,6 +7,9 @@
 //
 
 #import "UITextField+MTProperty.h"
+#import <objc/runtime.h>
+#import "MTMacro.h"
+
 static const char * const MT_TEXTFIELD_SELECTED_TEXT_RANGE_KEY = "MT_TEXTFIELD_SELECTED_TEXT_RANGE_KEY";
 
 @implementation UITextField (MTProperty)

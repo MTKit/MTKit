@@ -5,6 +5,7 @@
 //  Copyright (c) 2014年 Maitian. All rights reserved.
 //
 #import "objc/runtime.h"
+#import <UIKit/UIKit.h>
 
 @implementation UIImage (MTExtentsion)
 

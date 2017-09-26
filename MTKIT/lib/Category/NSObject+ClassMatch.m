@@ -8,6 +8,7 @@
 
 #import "NSObject+ClassMatch.h"
 #import "MTSwizzleTool.h"
+#import "MTMacro.h"
 
 @implementation NSObject (ClassMatch)
 

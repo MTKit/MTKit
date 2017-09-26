@@ -8,6 +8,7 @@
 
 #import "NSString+MTDateFormat.h"
 #import "NSDate+Extension.h"
+#import "NSDate+Time.h"
 
 @implementation NSString (MTDateFormat)
 

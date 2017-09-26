@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+MTDBProperty.h"
+#import <objc/runtime.h>
 
 @implementation NSObject(MTDBProperty)
 

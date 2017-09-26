@@ -8,6 +8,7 @@
 
 #import "UILabel+MTKeyWord.h"
 #import <CoreText/CoreText.h>
+#import "UIColor+Hexcolor.h"
 
 @implementation UILabel(MTKeyWord)
 /*

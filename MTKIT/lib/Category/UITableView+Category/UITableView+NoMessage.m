@@ -7,6 +7,10 @@
 //
 
 #import "UITableView+NoMessage.h"
+#import "UIImage+MTExtension.h"
+#import "MTMacro.h"
+#import <objc/runtime.h>
+#import <Masonry.h>
 
 @implementation UITableView (NoMessage)
 
@@ -15,7 +19,7 @@
     UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
     label.textColor = HEXCOLOR(0x737373);
     label.font = SYSFONT14;
-    label.text = MTToast_NoSearchResult;
+    label.text = @"没有查到你所需要的数据!";
     label.textAlignment = NSTextAlignmentCenter;
     label.hidden = true;
     return label;

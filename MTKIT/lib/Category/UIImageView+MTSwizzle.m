@@ -9,7 +9,8 @@
 #import "UIImageView+MTSwizzle.h"
 #import "MTSwizzleTool.h"
 #import "UIImage+Tint.h"
-#import "UIImage+G.h"
+#import "UIImage+MTExtension.h"
+#import "UIView+MTProperty.h"
 
 @implementation UIImageView (MTSwizzle)
 

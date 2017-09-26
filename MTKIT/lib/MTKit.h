@@ -9,5 +9,6 @@
 #ifndef MTKit_h
 #define MTKit_h
 
+#import "MTMacro.h"
 
 #endif /* MTKit_h */

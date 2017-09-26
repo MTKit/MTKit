@@ -7,8 +7,9 @@
 //
 
 #import "UIView+MTProperty.h"
-#import "UIButton+MTSwizzle.h"
+#import "UIButton+SwizzleMT.h"
 #import "UIImageView+MTSwizzle.h"
+#import <objc/runtime.h>
 
 @implementation UIView (MTProperty)
 static const char * const MT_BUTTON_NUMBER_KEY = "MT_BUTTON_NUMBER_KEY";

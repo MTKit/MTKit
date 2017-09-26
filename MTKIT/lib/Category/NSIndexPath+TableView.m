@@ -7,6 +7,7 @@
 //
 
 #import "NSIndexPath+TableView.h"
+#import <UIKit/UIKit.h>
 
 @implementation NSIndexPath (TableView)
 

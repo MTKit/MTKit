@@ -7,7 +7,7 @@
 //
 
 #import "UIControl+MTCheckClick.h"
-
+#import <objc/runtime.h>
 
 @implementation UIControl (MTCheckClick)
 

@@ -8,6 +8,8 @@
 
 #import "UIView+MTSwizzle.h"
 #import "MTSwizzleTool.h"
+#import "UIView+MTProperty.h"
+
 @implementation UIView (MTSwizzle)
 
 + (void)load {

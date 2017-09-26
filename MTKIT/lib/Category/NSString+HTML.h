@@ -10,8 +10,5 @@
 
 @interface NSString (HTML)
 
-//- (NSAttributedString *)htmlAttributedString;
-
-//- (NSAttributedString *)htmlAttributedStringWithNoImg;
 
 @end
