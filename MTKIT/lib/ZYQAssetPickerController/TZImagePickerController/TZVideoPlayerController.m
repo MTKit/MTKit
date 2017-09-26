@@ -14,7 +14,7 @@
 #import "TZImagePickerController.h"
 #import "TZPhotoPreviewController.h"
 #import "Toast.h"
-
+#import "MTMacro.h"
 @interface TZVideoPlayerController () {
     AVPlayer *_player;
     UIButton *_playButton;

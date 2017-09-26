@@ -9,6 +9,9 @@
 #ifndef MTMacro_h
 #define MTMacro_h
 
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
 #define MTNotificationCenter [NSNotificationCenter defaultCenter]
 #define MTMainQueue [NSOperationQueue mainQueue]
 #define MTGlobalQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
@@ -34,16 +37,16 @@ __weak typeof(Object)weakObject = Object;
 #define GCDdispatch_time(a) dispatch_time(DISPATCH_TIME_NOW, (int64_t)(a * NSEC_PER_SEC))
 
 #pragma mark - 字体
-#define SYSFONT24 [UIFont systemFontOfSize:24.0f]
-#define SYSFONT22 [UIFont systemFontOfSize:22.0f]
-#define SYSFONT20 [UIFont systemFontOfSize:20.0f]
-#define SYSFONT18 [UIFont systemFontOfSize:18.0f]
-#define SYSFONT16 [UIFont systemFontOfSize:16.0f]
-#define SYSFONT15 [UIFont systemFontOfSize:15.0f]
-#define SYSFONT14 [UIFont systemFontOfSize:14.0f]
-#define SYSFONT13 [UIFont systemFontOfSize:13.0f]
-#define SYSFONT12 [UIFont systemFontOfSize:12.0f]
-#define SYSFONT10 [UIFont systemFontOfSize:10.0f]
+#define MTFONT24 [UIFont systemFontOfSize:24.0f]
+#define MTFONT22 [UIFont systemFontOfSize:22.0f]
+#define MTFONT20 [UIFont systemFontOfSize:20.0f]
+#define MTFONT18 [UIFont systemFontOfSize:18.0f]
+#define MTFONT16 [UIFont systemFontOfSize:16.0f]
+#define MTFONT15 [UIFont systemFontOfSize:15.0f]
+#define MTFONT14 [UIFont systemFontOfSize:14.0f]
+#define MTFONT13 [UIFont systemFontOfSize:13.0f]
+#define MTFONT12 [UIFont systemFontOfSize:12.0f]
+#define MTFONT10 [UIFont systemFontOfSize:10.0f]
 
 #pragma mark - 基本类型
 #define TabeleCell_Normal_H 49
@@ -72,4 +75,11 @@ __weak typeof(Object)weakObject = Object;
 /*! 大于8.0 */
 #define IOS8x ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
+/**
+ *判断是哪个机型
+ */
+#define iPhone6P (ScreenWidth  == 414)
+#define iPhone6  (ScreenWidth  == 375)
+#define iPhone5  (ScreenHeight == 568)
+#define iPhone4  (ScreenHeight == 480)
 #endif /* MTMacro_h */

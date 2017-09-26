@@ -7,7 +7,8 @@
 //
 
 #import "ZYQAssetPickerController.h"
-
+#import "MTMacro.h"
+#import "Toast.h"
 #define IS_IOS7             ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending)
 #define kThumbnailLength    78.0f
 #define kThumbnailSize      CGSizeMake(kThumbnailLength, kThumbnailLength)

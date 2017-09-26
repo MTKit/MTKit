@@ -8,7 +8,8 @@
 
 #import "MTAlertView.h"
 #import "UIColor+KNColor.h"
-#import "MTHeader.h"
+#import "MTMacro.h"
+#import "Masonry.h"
 @interface MTAlertView()
 
 @property (nonatomic, weak) UIView *baseView;
@@ -119,7 +120,7 @@
         make.top.equalTo(_baseView.mas_top).offset(kScreenHeight/3);
         make.left.equalTo(_baseView.mas_left).offset(padding);
         make.right.equalTo(_baseView.mas_right).offset(-padding);
-        make.bottom.equalTo(_baseView.mas_bottom).offset(-ScreenHeight/3);
+        make.bottom.equalTo(_baseView.mas_bottom).offset(-kScreenHeight/3);
     }];
 
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -189,7 +190,7 @@
         case MTAlertViewContentNormal:
         {
 
-            _contentLabel.textColor = [UIColor colorWithHexString:Gray_Color];
+            _contentLabel.textColor = HEXCOLOR(0x919191);
         }
             break;
         case MTAlertViewContentBlack:
