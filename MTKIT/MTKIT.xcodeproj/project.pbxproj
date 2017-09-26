@@ -85,7 +85,6 @@
 		31D4AAAF1F7A21CB00A0345C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB2221F79EA3A00E0F05A /* UIView+Extension.m */; };
 		31D4AAB01F7A21CB00A0345C /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB1E21F79EA3600E0F05A /* UIView+Frame.m */; };
 		31D4AAB11F7A21CB00A0345C /* UIView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB1931F79EA3400E0F05A /* UIView+MTExtension.m */; };
-		31D4AAB21F7A21CB00A0345C /* UIView+MTPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB1DF1F79EA3600E0F05A /* UIView+MTPermission.m */; };
 		31D4AAB31F7A21CB00A0345C /* UIView+MTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB1F11F79EA3700E0F05A /* UIView+MTProperty.m */; };
 		31D4AAB41F7A21CB00A0345C /* UIView+MTSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB2141F79EA3900E0F05A /* UIView+MTSwizzle.m */; };
 		31D4AAB61F7A21CB00A0345C /* WYWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB1901F79EA3400E0F05A /* WYWebController.m */; };
@@ -127,7 +126,6 @@
 		03B7F767DDCA585531CD113F /* Pods-MTKIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTKIT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTKIT/Pods-MTKIT.debug.xcconfig"; sourceTree = "<group>"; };
 		26D76ABE610BF7497037B944 /* Pods-MTKITUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTKITUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTKITUITests/Pods-MTKITUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1D298CED59ECE2FC9E9685 /* libPods-MTKITTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTKITTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		319FB17A1F79EA3200E0F05A /* UIView+MTPermission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MTPermission.h"; sourceTree = "<group>"; };
 		319FB17B1F79EA3300E0F05A /* NSString+Hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		319FB17C1F79EA3300E0F05A /* UIControl+MTSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+MTSwizzle.h"; sourceTree = "<group>"; };
 		319FB17D1F79EA3300E0F05A /* UIScrollView+MTScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MTScroll.m"; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 		319FB1DC1F79EA3600E0F05A /* UILabel+MTLineSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MTLineSpace.m"; sourceTree = "<group>"; };
 		319FB1DD1F79EA3600E0F05A /* UIResponder+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
 		319FB1DE1F79EA3600E0F05A /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		319FB1DF1F79EA3600E0F05A /* UIView+MTPermission.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTPermission.m"; sourceTree = "<group>"; };
 		319FB1E01F79EA3600E0F05A /* UIView+MTSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MTSwizzle.h"; sourceTree = "<group>"; };
 		319FB1E11F79EA3600E0F05A /* NSTimer+addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
 		319FB1E21F79EA3600E0F05A /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
@@ -437,8 +434,6 @@
 				319FB1841F79EA3300E0F05A /* UIControl+MTSwizzle.m */,
 				319FB1EE1F79EA3700E0F05A /* UIImage+EXT.h */,
 				319FB2271F79EA3A00E0F05A /* UIImage+EXT.m */,
-				6D42D6B71F7A2E2300AC0A26 /* UIImage+G.h */,
-				6D42D6B81F7A2E2300AC0A26 /* UIImage+G.m */,
 				319FB2171F79EA3900E0F05A /* UIImage+Extension.h */,
 				319FB1821F79EA3300E0F05A /* UIImage+Extension.m */,
 				319FB1A51F79EA3500E0F05A /* UIImage+MTDimensionalCode.h */,
@@ -474,8 +469,6 @@
 				319FB1E21F79EA3600E0F05A /* UIView+Frame.m */,
 				319FB1ED1F79EA3700E0F05A /* UIView+MTExtension.h */,
 				319FB1931F79EA3400E0F05A /* UIView+MTExtension.m */,
-				319FB17A1F79EA3200E0F05A /* UIView+MTPermission.h */,
-				319FB1DF1F79EA3600E0F05A /* UIView+MTPermission.m */,
 				319FB1801F79EA3300E0F05A /* UIView+MTProperty.h */,
 				319FB1F11F79EA3700E0F05A /* UIView+MTProperty.m */,
 				319FB1E01F79EA3600E0F05A /* UIView+MTSwizzle.h */,
@@ -848,8 +841,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D14EBF11F78C7B40082B01B /* LaunchScreen.storyboard in Resources */,
-				6D42D6B21F7A2AAA00AC0A26 /* ZYQAssetPicker.Bundle in Resources */,
-				6D42D6AA1F7A2AAA00AC0A26 /* TZImagePickerController.bundle in Resources */,
 				6D14EBEE1F78C7B40082B01B /* Assets.xcassets in Resources */,
 				6D14EBE91F78C7B40082B01B /* Main.storyboard in Resources */,
 			);
@@ -1092,7 +1083,6 @@
 				31D4AAA91F7A21C800A0345C /* UITableView+NoMessage.m in Sources */,
 				31D4AAB71F7A21CB00A0345C /* WYWebProgressLayer.m in Sources */,
 				31D4AAB11F7A21CB00A0345C /* UIView+MTExtension.m in Sources */,
-				31D4AAB21F7A21CB00A0345C /* UIView+MTPermission.m in Sources */,
 				31D4AA821F7A21BD00A0345C /* NSArray+SafeKit.m in Sources */,
 				6D14EC1E1F78C86F0082B01B /* ViewController.m in Sources */,
 				31D4AAC51F7A28A500A0345C /* MTTableViewIndexView.m in Sources */,
@@ -1277,6 +1267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6LD8332TN;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = MTKIT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1293,6 +1284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6LD8332TN;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = MTKIT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

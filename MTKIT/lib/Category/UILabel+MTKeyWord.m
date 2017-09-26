@@ -121,29 +121,33 @@
             if (tmpRange.length) {
                 NSString *string = [text substringWithRange:tmpRange];
                 // 大小写
-                if ([[string lowercaseString] containsString:[keyword lowercaseString]]) {
-                    //                BOOL firstLine = i==0 ? true : false;
-                    //                BOOL lastLine = (i+1)==count ? true : false;
-                    //                NSString *beginWord;
-                    //                NSRange keywordRange = [string rangeOfString:keyword];
-                    //                if (firstLine == false) {
-                    //                    // 不是在前三位
-                    //                    if (string.length > ellipsis.length && keywordRange.location > ellipsis.length) {
-                    //                        beginWord = [string substringWithRange:NSMakeRange(ellipsis.length-1, string.length-ellipsis.length)];
-                    //                        string = [NSString stringWithFormat:@"%@%@",ellipsis,beginWord];
-                    //                    }
-                    //                }
-                    //                if (lastLine==false) {
-                    //                    // 不是在后三位
-                    //                    if (string.length > ellipsis.length) {
-                    //                        if ((keywordRange.location + keyword.length) < (string.length-keywordRange.length)) {
-                    //                            beginWord = [string substringWithRange:NSMakeRange(0, string.length-ellipsis.length)];
-                    //                            string = [NSString stringWithFormat:@"%@%@",beginWord,ellipsis];
-                    //                        }
-                    //                    }
-                    //                }
-                    lineString = string;
-                    break;
+                if (@available(iOS 8.0, *)) {
+                    if ([[string lowercaseString] containsString:[keyword lowercaseString]]) {
+                        //                BOOL firstLine = i==0 ? true : false;
+                        //                BOOL lastLine = (i+1)==count ? true : false;
+                        //                NSString *beginWord;
+                        //                NSRange keywordRange = [string rangeOfString:keyword];
+                        //                if (firstLine == false) {
+                        //                    // 不是在前三位
+                        //                    if (string.length > ellipsis.length && keywordRange.location > ellipsis.length) {
+                        //                        beginWord = [string substringWithRange:NSMakeRange(ellipsis.length-1, string.length-ellipsis.length)];
+                        //                        string = [NSString stringWithFormat:@"%@%@",ellipsis,beginWord];
+                        //                    }
+                        //                }
+                        //                if (lastLine==false) {
+                        //                    // 不是在后三位
+                        //                    if (string.length > ellipsis.length) {
+                        //                        if ((keywordRange.location + keyword.length) < (string.length-keywordRange.length)) {
+                        //                            beginWord = [string substringWithRange:NSMakeRange(0, string.length-ellipsis.length)];
+                        //                            string = [NSString stringWithFormat:@"%@%@",beginWord,ellipsis];
+                        //                        }
+                        //                    }
+                        //                }
+                        lineString = string;
+                        break;
+                    }
+                } else {
+                    // Fallback on earlier versions
                 }
             }
         }

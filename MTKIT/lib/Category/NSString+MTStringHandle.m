@@ -144,8 +144,12 @@
     if ([ret hasSuffix:@".00"]) {
         ret = [ret stringByReplacingOccurrencesOfString:@".00" withString:@""];
     }
-    if ([ret hasSuffix:@"0"] && [ret containsString:@"."]) {
-        ret = [ret substringToIndex:self.length - 1];
+    if (@available(iOS 8.0, *)) {
+        if ([ret hasSuffix:@"0"] && [ret containsString:@"."]) {
+            ret = [ret substringToIndex:self.length - 1];
+        }
+    } else {
+        // Fallback on earlier versions
     }
     return ret;
 }

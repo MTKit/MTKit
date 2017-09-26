@@ -294,21 +294,25 @@ id stringWithDiffCount(NSInteger nowComponents, NSInteger nowNextLevelCom,NSInte
         if (date) {
 
             NSCalendar *calendar = [NSCalendar currentCalendar];
-            if ([calendar isDateInYesterday:date])
-            {
-                ret = @"昨天";
-            }
-            else if([calendar isDateInToday:date])
-            {
-                // 今天
-                [dateFormatter setDateFormat:@"HH:mm"];
-                ret = [dateFormatter stringFromDate:date];
-            }
-            else if([date isInSevenDays])
-            {
-                // 7天内
-                [dateFormatter setDateFormat:@"EEEE"];
-                ret = [dateFormatter stringFromDate:date];
+            if (@available(iOS 8.0, *)) {
+                if ([calendar isDateInYesterday:date])
+                {
+                    ret = @"昨天";
+                }
+                else if([calendar isDateInToday:date])
+                {
+                    // 今天
+                    [dateFormatter setDateFormat:@"HH:mm"];
+                    ret = [dateFormatter stringFromDate:date];
+                }
+                else if([date isInSevenDays])
+                {
+                    // 7天内
+                    [dateFormatter setDateFormat:@"EEEE"];
+                    ret = [dateFormatter stringFromDate:date];
+                }
+            } else {
+                // Fallback on earlier versions
             }
             
 //            if ([[NSDate date] timeIntervalSinceDate:date] < 0)
