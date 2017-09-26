@@ -53,6 +53,7 @@
 		6D42D6B21F7A2AAA00AC0A26 /* ZYQAssetPicker.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D42D6A11F7A2AAA00AC0A26 /* ZYQAssetPicker.Bundle */; };
 		6D42D6B31F7A2AAA00AC0A26 /* ZYQAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D42D6A31F7A2AAA00AC0A26 /* ZYQAssetPickerController.m */; };
 		6D42D6B61F7A2AD200AC0A26 /* MTPictureEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D42D6B41F7A2AD200AC0A26 /* MTPictureEmojiView.m */; };
+		6D42D6B91F7A2E2400AC0A26 /* UIImage+G.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D42D6B81F7A2E2300AC0A26 /* UIImage+G.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,6 +328,8 @@
 		6D42D6A31F7A2AAA00AC0A26 /* ZYQAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQAssetPickerController.m; sourceTree = "<group>"; };
 		6D42D6B41F7A2AD200AC0A26 /* MTPictureEmojiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTPictureEmojiView.m; sourceTree = "<group>"; };
 		6D42D6B51F7A2AD200AC0A26 /* MTPictureEmojiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTPictureEmojiView.h; sourceTree = "<group>"; };
+		6D42D6B71F7A2E2300AC0A26 /* UIImage+G.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+G.h"; sourceTree = "<group>"; };
+		6D42D6B81F7A2E2300AC0A26 /* UIImage+G.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+G.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +431,8 @@
 				319FB1841F79EA3300E0F05A /* UIControl+MTSwizzle.m */,
 				319FB1EE1F79EA3700E0F05A /* UIImage+EXT.h */,
 				319FB2271F79EA3A00E0F05A /* UIImage+EXT.m */,
+				6D42D6B71F7A2E2300AC0A26 /* UIImage+G.h */,
+				6D42D6B81F7A2E2300AC0A26 /* UIImage+G.m */,
 				319FB2171F79EA3900E0F05A /* UIImage+Extension.h */,
 				319FB1821F79EA3300E0F05A /* UIImage+Extension.m */,
 				319FB1A51F79EA3500E0F05A /* UIImage+MTDimensionalCode.h */,
@@ -966,6 +971,7 @@
 				319FB22B1F79EBAA00E0F05A /* NSArray+Log.m in Sources */,
 				6D42D65B1F7A288500AC0A26 /* MTHex.m in Sources */,
 				6D42D6AB1F7A2AAA00AC0A26 /* TZImagePickerController.m in Sources */,
+				6D42D6B91F7A2E2400AC0A26 /* UIImage+G.m in Sources */,
 				6D42D65A1F7A288500AC0A26 /* MTTempController.m in Sources */,
 				6D42D6A91F7A2AAA00AC0A26 /* TZImageManager.m in Sources */,
 				6D42D6A61F7A2AAA00AC0A26 /* TZAssetModel.m in Sources */,

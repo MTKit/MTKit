@@ -7,6 +7,7 @@
 //
 
 #import "MTAlertView.h"
+#import "UIColor+KNColor.h"
 #import "MTHeader.h"
 @interface MTAlertView()
 
