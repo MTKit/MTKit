@@ -437,6 +437,8 @@
 				319FB1841F79EA3300E0F05A /* UIControl+MTSwizzle.m */,
 				319FB1EE1F79EA3700E0F05A /* UIImage+EXT.h */,
 				319FB2271F79EA3A00E0F05A /* UIImage+EXT.m */,
+				6D42D6B71F7A2E2300AC0A26 /* UIImage+G.h */,
+				6D42D6B81F7A2E2300AC0A26 /* UIImage+G.m */,
 				319FB2171F79EA3900E0F05A /* UIImage+Extension.h */,
 				319FB1821F79EA3300E0F05A /* UIImage+Extension.m */,
 				319FB1A51F79EA3500E0F05A /* UIImage+MTDimensionalCode.h */,
@@ -846,6 +848,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D14EBF11F78C7B40082B01B /* LaunchScreen.storyboard in Resources */,
+				6D42D6B21F7A2AAA00AC0A26 /* ZYQAssetPicker.Bundle in Resources */,
+				6D42D6AA1F7A2AAA00AC0A26 /* TZImagePickerController.bundle in Resources */,
 				6D14EBEE1F78C7B40082B01B /* Assets.xcassets in Resources */,
 				6D14EBE91F78C7B40082B01B /* Main.storyboard in Resources */,
 			);
