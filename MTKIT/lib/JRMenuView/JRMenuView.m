@@ -123,6 +123,6 @@
 }
 - (void)setHasShow:(BOOL)hasShow{
     _hasShow = hasShow;
-    [MTPTShareInfoModel shareSingel].hasShowMenu = _hasShow;
+//    [MTPTShareInfoModel shareSingel].hasShowMenu = _hasShow;
 }
 @end

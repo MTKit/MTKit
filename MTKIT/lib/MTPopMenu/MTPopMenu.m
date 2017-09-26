@@ -7,6 +7,8 @@
 //
 
 #import "MTPopMenu.h"
+#import "MTHeader.h"
+#import "UIView+Frame.h"
 @class MTPopMenuCell;
 
 #define OriginY(obj) obj.frame.origin.y

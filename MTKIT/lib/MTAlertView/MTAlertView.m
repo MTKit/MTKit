@@ -7,7 +7,7 @@
 //
 
 #import "MTAlertView.h"
-
+#import "MTHeader.h"
 @interface MTAlertView()
 
 @property (nonatomic, weak) UIView *baseView;
@@ -49,10 +49,10 @@
 }
 
 - (void)setupSubViewsTitle:(NSString *)title content:(NSString *)content cancleTitle:(NSString *)cancleTitle sureTitle:(NSString *)sureTitle{
-    self.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+    self.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     UIView *baseView = [[UIView alloc] init];
     baseView.backgroundColor = [UIColor colorWithHexStr:@"#000000" alpha:0.5];
-    baseView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+    baseView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     _baseView = baseView;
     [self addSubview:_baseView];
 
@@ -65,8 +65,8 @@
     [self.baseView addSubview:_showView];
 
     UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.textColor = [UIColor colorWithHexStr:Font_Color alpha:1];
-    titleLabel.font = SYSFONT16;
+    titleLabel.textColor = HEXCOLOR(0x333333);
+    titleLabel.font = MTFONT16;
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.text = title;
     _titleLabel = titleLabel;
@@ -75,8 +75,8 @@
     UILabel *subTitleLabel = [[UILabel alloc] init];
     subTitleLabel.text = self.subTitle;
     subTitleLabel.textAlignment = NSTextAlignmentLeft;
-    subTitleLabel.textColor = [UIColor colorWithHexStr:Gray_Color alpha:1];
-    subTitleLabel.font = SYSFONT14;
+    subTitleLabel.textColor =  HEXCOLOR(0x919191);
+    subTitleLabel.font = MTFONT14;
     subTitleLabel.numberOfLines = 0;
     _subTitleLabel = subTitleLabel;
     [self.showView addSubview:_subTitleLabel];
@@ -84,15 +84,15 @@
     UILabel *contentLabel = [[UILabel alloc] init];
     contentLabel.text = content;
     contentLabel.textAlignment = NSTextAlignmentCenter;
-    contentLabel.textColor = [UIColor colorWithHexStr:Gray_Color alpha:1];
-    contentLabel.font = SYSFONT14;
+    contentLabel.textColor = HEXCOLOR(0x919191);
+    contentLabel.font = MTFONT14;
     contentLabel.numberOfLines = 0;
     _contentLabel = contentLabel;
     [self.showView addSubview:_contentLabel];
 
     UIButton *cancleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    cancleBtn.backgroundColor = [UIColor colorWithHexStr:@"#F3F3F3" alpha:1];
-    [cancleBtn setTitleColor:[UIColor colorWithHexStr:@"#333333" alpha:1.0f] forState:UIControlStateNormal];
+    cancleBtn.backgroundColor = HEXCOLOR(0xF3F3F3);
+    [cancleBtn setTitleColor:HEXCOLOR(0xF3F3F3) forState:UIControlStateNormal];
     cancleBtn.userInteractionEnabled = YES;
 //    [cancleBtn layer].cornerRadius = 3;
     [cancleBtn setTitle:cancleTitle forState:UIControlStateNormal];
@@ -102,7 +102,7 @@
     [self.showView addSubview:_cancleBtn];
 
     UIButton *sureBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    sureBtn.backgroundColor = [UIColor colorWithHexStr:@"#0076DA" alpha:1];
+    sureBtn.backgroundColor = HEXCOLOR(0x0076DA);
     sureBtn.userInteractionEnabled = YES;
 //    [sureBtn layer].cornerRadius = 3;
     [sureBtn setTitle:sureTitle forState:UIControlStateNormal];
@@ -115,7 +115,7 @@
     CGFloat padding = 15;
 //    CGFloat paddingF = (ScreenWidth*0.5-81)*0.6;
     [_showView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_baseView.mas_top).offset(ScreenHeight/3);
+        make.top.equalTo(_baseView.mas_top).offset(kScreenHeight/3);
         make.left.equalTo(_baseView.mas_left).offset(padding);
         make.right.equalTo(_baseView.mas_right).offset(-padding);
         make.bottom.equalTo(_baseView.mas_bottom).offset(-ScreenHeight/3);

@@ -9,6 +9,7 @@
 #import "MTTempController.h"
 #import "MTAddPicsView.h"
 #import "MTPictureEmojiView.h"
+#import "MTHeader.h"
 @interface MTTempController ()<MTPictureEmojiViewDelegate>
 @property (nonatomic, weak) MTAddPicsView *picview;
 @end
@@ -33,7 +34,7 @@
 - (void)setupBtn {
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 80, ScreenWidth, 30);
+    btn.frame = CGRectMake(0, 80, kScreenWidth, 30);
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [btn setBackgroundColor:[UIColor grayColor]];
     [self.view addSubview:btn];
@@ -42,7 +43,7 @@
 - (void)setupPictureEmojiView {
 
     MTPictureEmojiView *view = [[MTPictureEmojiView alloc] init];
-    view.frame = CGRectMake(0, 300, ScreenWidth, 40);
+    view.frame = CGRectMake(0, 300, kScreenWidth, 40);
     view.maxWordCount = 140;
     view.images = @[@"circle_send_selectImage",@"circle_send_Emoji"];
     view.delegate = self;
