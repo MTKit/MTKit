@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		315290551F7A32800049CEF1 /* MTRETool.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D4AAC91F7A305900A0345C /* MTRETool.m */; };
 		315290561F7A32980049CEF1 /* MTSwizzleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D4AAB91F7A22E600A0345C /* MTSwizzleTool.m */; };
+		31CF37611F7B4C12008F5601 /* MTExceptionCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D4AABD1F7A22E600A0345C /* MTExceptionCatch.m */; };
 		31D4AA651F7A21B600A0345C /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB1871F79EA3300E0F05A /* NSArray+Log.m */; };
 		31D4AA661F7A21B600A0345C /* NSArray+MTDecription.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB21D1F79EA3A00E0F05A /* NSArray+MTDecription.m */; };
 		31D4AA671F7A21B600A0345C /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FB1861F79EA3300E0F05A /* NSDate+Category.m */; };
@@ -152,7 +153,6 @@
 		26D76ABE610BF7497037B944 /* Pods-MTKITUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTKITUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTKITUITests/Pods-MTKITUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1D298CED59ECE2FC9E9685 /* libPods-MTKITTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTKITTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		319FB17B1F79EA3300E0F05A /* NSString+Hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
-		319FB17C1F79EA3300E0F05A /* UIControl+MTSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+MTSwizzle.h"; sourceTree = "<group>"; };
 		319FB17D1F79EA3300E0F05A /* UIScrollView+MTScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MTScroll.m"; sourceTree = "<group>"; };
 		319FB17E1F79EA3300E0F05A /* UITextView+MTLineSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+MTLineSpace.m"; sourceTree = "<group>"; };
 		319FB17F1F79EA3300E0F05A /* NSString+MTRandom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTRandom.m"; sourceTree = "<group>"; };
@@ -160,7 +160,6 @@
 		319FB1811F79EA3300E0F05A /* WYWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYWebController.h; sourceTree = "<group>"; };
 		319FB1821F79EA3300E0F05A /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		319FB1831F79EA3300E0F05A /* UIButton+SwizzleMT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SwizzleMT.m"; sourceTree = "<group>"; };
-		319FB1841F79EA3300E0F05A /* UIControl+MTSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+MTSwizzle.m"; sourceTree = "<group>"; };
 		319FB1851F79EA3300E0F05A /* NSDictionary+MTProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTProperty.m"; sourceTree = "<group>"; };
 		319FB1861F79EA3300E0F05A /* NSDate+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
 		319FB1871F79EA3300E0F05A /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -322,8 +321,8 @@
 		31CF37601F7B3B7E008F5601 /* MTKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MTKit.podspec; sourceTree = "<group>"; };
 		31D4AAB91F7A22E600A0345C /* MTSwizzleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTSwizzleTool.m; sourceTree = "<group>"; };
 		31D4AABA1F7A22E600A0345C /* MTSwizzleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTSwizzleTool.h; sourceTree = "<group>"; };
-		31D4AABC1F7A22E600A0345C /* MTUncaughtException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTUncaughtException.h; sourceTree = "<group>"; };
-		31D4AABD1F7A22E600A0345C /* MTUncaughtException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTUncaughtException.m; sourceTree = "<group>"; };
+		31D4AABC1F7A22E600A0345C /* MTExceptionCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTExceptionCatch.h; sourceTree = "<group>"; };
+		31D4AABD1F7A22E600A0345C /* MTExceptionCatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTExceptionCatch.m; sourceTree = "<group>"; };
 		31D4AABE1F7A23AE00A0345C /* UIColor+Hexcolor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hexcolor.h"; sourceTree = "<group>"; };
 		31D4AABF1F7A23AE00A0345C /* UIColor+Hexcolor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hexcolor.m"; sourceTree = "<group>"; };
 		31D4AAC21F7A246600A0345C /* MTMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMacro.h; sourceTree = "<group>"; };
@@ -512,8 +511,6 @@
 				319FB21C1F79EA3A00E0F05A /* UIColor+KNColor.m */,
 				319FB2151F79EA3900E0F05A /* UIControl+MTCheckClick.h */,
 				319FB19E1F79EA3500E0F05A /* UIControl+MTCheckClick.m */,
-				319FB17C1F79EA3300E0F05A /* UIControl+MTSwizzle.h */,
-				319FB1841F79EA3300E0F05A /* UIControl+MTSwizzle.m */,
 				319FB1EE1F79EA3700E0F05A /* UIImage+EXT.h */,
 				319FB2271F79EA3A00E0F05A /* UIImage+EXT.m */,
 				319FB2171F79EA3900E0F05A /* UIImage+Extension.h */,
@@ -680,8 +677,8 @@
 		31D4AABB1F7A22E600A0345C /* ExceptionCatch */ = {
 			isa = PBXGroup;
 			children = (
-				31D4AABC1F7A22E600A0345C /* MTUncaughtException.h */,
-				31D4AABD1F7A22E600A0345C /* MTUncaughtException.m */,
+				31D4AABC1F7A22E600A0345C /* MTExceptionCatch.h */,
+				31D4AABD1F7A22E600A0345C /* MTExceptionCatch.m */,
 			);
 			path = ExceptionCatch;
 			sourceTree = "<group>";
@@ -1338,6 +1335,7 @@
 				6D12D89D1F7A38160019606D /* UIDevice+FCUUID.m in Sources */,
 				31D4AA7B1F7A21B600A0345C /* NSString+Path.m in Sources */,
 				31D4AAA01F7A21C500A0345C /* UIImage+Tint.m in Sources */,
+				31CF37611F7B4C12008F5601 /* MTExceptionCatch.m in Sources */,
 				31D4AA991F7A21C500A0345C /* UIColor+KNColor.m in Sources */,
 				315290551F7A32800049CEF1 /* MTRETool.m in Sources */,
 				31D4AA8E1F7A21C100A0345C /* VSDependencyManager.m in Sources */,

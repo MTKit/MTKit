@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MTUncaughtException : NSObject
+@interface MTExceptionCatch : NSObject
 
 - (void)uncaughtExceptionLog;
 

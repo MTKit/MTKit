@@ -7,7 +7,6 @@
 //
 
 #import "Toast.h"
-#import "AppDelegate.h"
 #import "MTSingleton.h"
 #import "MTMacro.h"
 //定义一个静态变量用于接收实例对象，初始化为nil
@@ -112,7 +111,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(Toast)
         }
         
         
-        AppDelegate *delegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+        id <UIApplicationDelegate> delegate = [UIApplication sharedApplication].delegate;
         [delegate.window addSubview:_toastView];
     }else{
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideToast) object:nil];

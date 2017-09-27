@@ -9,7 +9,7 @@
 #import "MTAlertView.h"
 #import "UIColor+KNColor.h"
 #import "MTMacro.h"
-#import "Masonry.h"
+#import <Masonry.h>
 @interface MTAlertView()
 
 @property (nonatomic, weak) UIView *baseView;

@@ -6,9 +6,11 @@
 //  Copyright © 2016年 MaiTianMM. All rights reserved.
 //
 
-#import "MTUncaughtException.h"
-#import "MTURLHeader.h"
-@implementation MTUncaughtException
+#import "MTExceptionCatch.h"
+#import <UIKit/UIKit.h>
+#import "MTTools_MM.h"
+
+@implementation MTExceptionCatch
 #pragma mark -日志
 
 - (void)uncaughtExceptionLog{
@@ -89,7 +91,7 @@ static void UncaughtExceptionHandler(NSException* exception){
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *dateStr = [formatter stringFromDate:[NSDate date]];
 
-    NSString *crashString = [NSString stringWithFormat:@",- %@ ->[Uncaught Exception]\r\nName:%@,Reason:%@\r\n[Fe Symbols Start]\r\n%@[Fe Symbols End]\r\n\r\n %@\n %@\n %@\n",dateStr,name,reason,strSymbols,[MTTools_MM phoneNumber],[MTInfoSingle shareInstance].userId,[MTInfoSingle shareInstance].userName];
+    NSString *crashString = [NSString stringWithFormat:@",- %@ ->[Uncaught Exception]\r\nName:%@,Reason:%@\r\n[Fe Symbols Start]\r\n%@[Fe Symbols End]\r\n\r\n %@\n %@\n %@\n",dateStr,name,reason,strSymbols,[MTTools_MM phoneNumber],@"",@""];
 
     //把错误日志写到文件中
     if (![fileManager fileExistsAtPath:logFilePath]) {
