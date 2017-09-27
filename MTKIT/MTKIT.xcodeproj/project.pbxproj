@@ -99,7 +99,6 @@
 		6D12D8851F7A38160019606D /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D8471F7A38150019606D /* TZGifPhotoPreviewController.m */; };
 		6D12D8861F7A38160019606D /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D8491F7A38150019606D /* TZImageCropManager.m */; };
 		6D12D8871F7A38160019606D /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D84B1F7A38150019606D /* TZImageManager.m */; };
-		6D12D8881F7A38160019606D /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D12D84C1F7A38150019606D /* TZImagePickerController.bundle */; };
 		6D12D8891F7A38160019606D /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D84E1F7A38150019606D /* TZImagePickerController.m */; };
 		6D12D88A1F7A38160019606D /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D8501F7A38150019606D /* TZPhotoPickerController.m */; };
 		6D12D88B1F7A38160019606D /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D8521F7A38150019606D /* TZPhotoPreviewCell.m */; };
@@ -107,7 +106,6 @@
 		6D12D88D1F7A38160019606D /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D8561F7A38150019606D /* TZProgressView.m */; };
 		6D12D88E1F7A38160019606D /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D8581F7A38150019606D /* TZVideoPlayerController.m */; };
 		6D12D88F1F7A38160019606D /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D85A1F7A38150019606D /* UIView+Layout.m */; };
-		6D12D8901F7A38160019606D /* ZYQAssetPicker.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D12D85B1F7A38150019606D /* ZYQAssetPicker.Bundle */; };
 		6D12D8911F7A38160019606D /* ZYQAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D85D1F7A38150019606D /* ZYQAssetPickerController.m */; };
 		6D12D8921F7A38160019606D /* MTPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D8601F7A38150019606D /* MTPopMenu.m */; };
 		6D12D8981F7A38160019606D /* MTHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12D86E1F7A38150019606D /* MTHex.m */; };
@@ -320,6 +318,8 @@
 		319FB2281F79EA3A00E0F05A /* NSString+HTML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
 		319FB2291F79EA3A00E0F05A /* NSString+MTStringHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTStringHandle.h"; sourceTree = "<group>"; };
 		319FB22A1F79EA3A00E0F05A /* NSTimer+MTAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MTAddition.h"; sourceTree = "<group>"; };
+		31CF375C1F7B39AB008F5601 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		31CF37601F7B3B7E008F5601 /* MTKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MTKit.podspec; sourceTree = "<group>"; };
 		31D4AAB91F7A22E600A0345C /* MTSwizzleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTSwizzleTool.m; sourceTree = "<group>"; };
 		31D4AABA1F7A22E600A0345C /* MTSwizzleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTSwizzleTool.h; sourceTree = "<group>"; };
 		31D4AABC1F7A22E600A0345C /* MTUncaughtException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTUncaughtException.h; sourceTree = "<group>"; };
@@ -854,6 +854,8 @@
 		6D14EBD51F78C7B40082B01B = {
 			isa = PBXGroup;
 			children = (
+				31CF37601F7B3B7E008F5601 /* MTKit.podspec */,
+				31CF375C1F7B39AB008F5601 /* README.md */,
 				6D14EC181F78C86F0082B01B /* Example */,
 				6D14EC161F78C86F0082B01B /* lib */,
 				6D14EBE01F78C7B40082B01B /* MTKIT */,

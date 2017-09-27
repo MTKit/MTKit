@@ -13,7 +13,8 @@ s.license      = "MIT"
 
 s.author             = { "HaoSun" => "sunhao.private@foxmail.com" }
 s.source       = { :git => "https://github.com/MTKit/MTKit.git", :tag => "1.0.4" }
-s.source_files  = "MTKit/lib/*.{h,m}"
+s.source_files  = "MTKit/lib"
+s.exclude_files = "Classes/Exclude"
 s.requires_arc = true
 s.dependency 'Masonry', '~> 1.1.0'
 end
