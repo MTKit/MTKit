@@ -10,5 +10,8 @@
 #define MTKit_h
 
 #import "MTMacro.h"
+#import <MTKit/MTPopMenu.h>
+#import <MTKit/NSString+Avatar.h>
+#import <MTKit/MTTools_MM.h>
 
 #endif /* MTKit_h */

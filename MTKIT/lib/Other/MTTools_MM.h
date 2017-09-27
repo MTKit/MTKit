@@ -7,6 +7,7 @@
 //  工具类啊工具类～～～
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface MTTools_MM : NSObject
 
@@ -61,9 +62,9 @@
 /**
  * 获取导航栏颜色
  */
-//+ (UIColor *)getNavColor;
++ (UIColor *)getNavColor;
 /**
  * 获取菩提模块色值- 比navcolor 透明度 *0.8
  */
-//+ (UIColor *)getPTColor;
++ (UIColor *)getPTColor;
 @end
